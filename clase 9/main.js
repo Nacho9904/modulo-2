@@ -55,3 +55,4 @@ if (letra.length > 1) {
     default:
       console.log('Ingrese una letra vocal');
   }
+} 
