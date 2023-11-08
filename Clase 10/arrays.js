@@ -1,86 +1,85 @@
-/*
-Toda la clase
+// let frase = "Hola Mundo";
+// const myArray = [1, 'Pedro', true, false];
 
-let contador = 17; //inicializacion del contador
+// frase = frase + " como estan?"
 
-while (contador % 15 !== 0) {
-  console.log(`El nro ${contador} NO es divisible por 15`);
-  contador += 2;
-}
+// console.log(myArray);
 
-// do {
-//   console.log(`Hola mundo el contador es: ${contador}`);
-//   contador++;
-// } while (contador < 1000);
+// ESTO NO!!!!
+// myArray
+// console.log(myArray[0]);
+// console.log(myArray[1]);
+// console.log(myArray[2]);
+// console.log(myArray[3]);
+// console.log(myArray[4]);
 
-// for (let i = 0; i < 10; i += 2) {
-//   console.log(`Hola mundo el contador es: ${i}`);
-// } */
+// let limite = myArray.length;
 
-
-
-
-
-
-/* Ejercicio 9 del tp 2 */
-
-
-
-
-/* // 9.- Escribe un programa que pida una frase
-// y escriba las vocales que aparecen
-
-// let frase = prompt('Ingrese una frase');
-// let vocales = '';
-
-// let i = 0;
-// console.log(frase.length);
-
-// while (i < frase.length) {
-//   // console.log(`La letra en posicion ${i} es ${frase.charAt(i)}`);
-//   if (
-//     frase.charAt(i).toLowerCase() === 'a' ||
-//     frase.charAt(i).toLowerCase() === 'e' ||
-//     frase.charAt(i).toLowerCase() === 'i' ||
-//     frase.charAt(i).toLowerCase() === 'o' ||
-//     frase.charAt(i).toLowerCase() === 'u'
-//   ) {
-//     vocales = vocales + frase.charAt(i).toLowerCase() + '-';
+// for (let i = 0; i < myArray.length; i++) {
+//   console.log(myArray[i]);
+//   if (i <= limite) {
+//     myArray.push("Juan");
 //   }
-
-//   i++;
 // }
 
-// if (vocales.length > 0) {
-//   console.log('Las vocales son: ', vocales);
-// } else {
-//   console.log(`Tu frase "${frase}" no tiene vocales`);
-// }
+let listadoNombres = [];
+let nombre;
+do {
+  nombre = prompt('Ingrese un nombre');
 
-// FOR
-
-let frase = prompt('Ingrese una frase');
-let vocales = '';
-
-console.log(frase.length);
-
-for (let i = 0; i < frase.length; i++) {
-  // console.log(`La letra en posicion ${i} es ${frase.charAt(i)}`);
-  if (
-    frase.charAt(i).toLowerCase() === 'a' ||
-    frase.charAt(i).toLowerCase() === 'e' ||
-    frase.charAt(i).toLowerCase() === 'i' ||
-    frase.charAt(i).toLowerCase() === 'o' ||
-    frase.charAt(i).toLowerCase() === 'u'
-  ) {
-    vocales = vocales + frase.charAt(i).toLowerCase() + '-';
+  if (nombre) {
+    listadoNombres.push(nombre);
   }
+} while (nombre);
+
+listadoNombres[50] = 'UNO'
+listadoNombres.splice(0, 0, "UNO")
+listadoNombres.splice(5, 25)
+
+for (let i = 0; i < listadoNombres.length; i++) {
+  console.log(`En la posicion ${i} esta el elemento: ${listadoNombres[i]}`);
 }
 
-if (vocales.length > 0) {
-  console.log('Las vocales son: ', vocales);
-} else {
-  console.log(`Tu frase "${frase}" no tiene vocales`);
-} */
+
+
+
+
+
+
+
+/* Ejercicio en clase */
+
+/* 
+1- Crear un array llamado meses y que almacene 
+el nombre de los doce meses del año. 
+Mostrar por pantalla en forma de lista 
+los doce nombres del arreglo.
+*/
+
+/* const meses = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre',
+  ];
+  
+  let mesesPantalla = `<ol>`;
+  
+  for (let index = 0; index < meses.length; index++) {
+    mesesPantalla += `<li>${meses[index]}</li>`;
+    if (index === meses.length - 1) {
+      mesesPantalla += '</ol>'
+    }
+  }
+  
+  document.write(mesesPantalla); */
 
 
