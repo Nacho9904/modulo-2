@@ -22,7 +22,17 @@
 //   }
 // }
 
-let listadoNombres = [];
+
+
+
+
+
+
+
+
+
+
+/* let listadoNombres = [];
 let nombre;
 do {
   nombre = prompt('Ingrese un nombre');
@@ -38,48 +48,41 @@ listadoNombres.splice(5, 25)
 
 for (let i = 0; i < listadoNombres.length; i++) {
   console.log(`En la posicion ${i} esta el elemento: ${listadoNombres[i]}`);
-}
+} */
 
 
 
+const alumnos = ['Nachito','Gonzalo', 'Eduardo']
+/* Se agrega al final */
+alumnos.push('German')
+/* Se agrega al inicio */
+alumnos.unshift('Promo')
+console.log (alumnos)
 
 
+/* eliminar el ultimo elemento */
+alumnos.pop()
+
+/* Elimina el primer elemento de un array */
+alumnos.shift()
+
+/* Mostrar el ultimo elemento de un array */
+console.log (alumnos[alumnos.length - 1 ])
+
+console.log(alumnos.at(-1))
+console.log(alumnos.at(1))
+/* Para saber la posicion(index) de los elementos */
+const pos = alumnos.indexOf('Ivan')
+
+console.log (pos)
 
 
+/* Saber si un elemento existe en un array */
+console.log(alumnos.includes('Nico'))
 
-/* Ejercicio en clase */
+const profes = ['Enrico', 'Nicolas']
+const comision87i = alumnos.concat(profes)
+console.log(comision87i)
 
-/* 
-1- Crear un array llamado meses y que almacene 
-el nombre de los doce meses del año. 
-Mostrar por pantalla en forma de lista 
-los doce nombres del arreglo.
-*/
-
-/* const meses = [
-    'Enero',
-    'Febrero',
-    'Marzo',
-    'Abril',
-    'Mayo',
-    'Junio',
-    'Julio',
-    'Agosto',
-    'Septiembre',
-    'Octubre',
-    'Noviembre',
-    'Diciembre',
-  ];
-  
-  let mesesPantalla = `<ol>`;
-  
-  for (let index = 0; index < meses.length; index++) {
-    mesesPantalla += `<li>${meses[index]}</li>`;
-    if (index === meses.length - 1) {
-      mesesPantalla += '</ol>'
-    }
-  }
-  
-  document.write(mesesPantalla); */
-
-
+console.log(comision87i.sort())
+console.log(comision87i.reverse())
